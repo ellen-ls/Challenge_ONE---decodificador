@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --font-family: 'inter', sans-serif;
+    --cor-principal:#590a71;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #cccc;
+    
+}
+
+header{
+    padding: 2.5rem;
+    background-color: rgb(13, 75, 190);
+    margin-bottom: 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+header>img{
+    width: 60px;
+}
+
+
+textarea.input, textarea.mensagem{
+    display: flex;
+    width: 500px;
+    height: 300px;
+    background-color: transparent;
+    resize: none;
+    margin-left: 2rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--cor-principal);
+    
+}
+
+textarea.input::placeholder{
+    color:  var(--cor-principal);
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.mensagem{
+ background-color: #f3f5fc;
+ background-image: url("./img/pinguim-bonitinho-segurando-lupa-vetor.png");
+ background-repeat: no-repeat;
+ border: none;
+ margin-left: 98px;
+ margin-top: 20px;
+ padding-left: 20px;
+ 
+}
+
+.alert {
+    display: flex;
+    flex-direction: row;
+    margin-left: 13rem;
+    align-items: center; 
+    gap:8px;
+    color:#495057;
+    font-family: var(--font-family);
+    font-size: 0.75rem;
+    opacity: 80%;
+}
+
+.alert>img{
+    width: 40px;
+}
+
+.botoes{
+    
+    margin-top: 2rem;
+    margin-left: 5rem;
+    gap: 24px;
+    
+}
+
+button{
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width:200px;
+    height: 60px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.criptografar{
+    color: #ffffff;
+    background-color: var(--cor-principal);
+}
+
+.descriptografar{
+    color: var(--cor-principal);
+    background-color:#D8DFE8;
+    border:1px solid var(--cor-principal); 
+}
+
+.copiar{
+
+   margin-top: 2rem;
+   margin-left: 10rem;
+
+}
+
+button:hover{
+    background-color: #450b57;
+    color: #ffffff;
+    
+}
+
+footer{
+    background-color: #450b57;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px 0;
+    font-family: var(--font-family);
+   
+}
